@@ -24,6 +24,7 @@ $('#searchIcon').click(function(event){
 // Add overflowY hidden to body when search box is shown
 $('#close-search-box').click(function(){
     $('div.search-box-transition').removeClass('search-box-transition-after');
+    $('body').removeClass('overflowY');
     if(!navbarButton.get().hasClass('transitionNabBar')){
         $('body').removeClass('overflowY');
     }
